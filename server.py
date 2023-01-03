@@ -1,30 +1,28 @@
 from flask import Flask, render_template, request, redirect
+from flask_bootstrap import Bootstrap
 import csv
 
-app = Flask(__name__)
+# flask --app server.py --debug run
 
 
-# def write_contact_to_file(data):
-#     try:
-#         email = data['email']
-#         subject = data['subject']
-#         message = data['message']
-#         # now i can easily create an Excel database if i want
-#         with open('database.txt', 'a') as f:
-#             f.write(f'\n {email}, {subject}, {message}')
-#             f.close()
-#             return 'done'
-#     except:
-#         return 'error'
+def create_app():
+    app = Flask(__name__)
+    Bootstrap(app)
+
+    return app
+
+
+app = create_app()
+
 
 def write_to_CSV(data):
+    name = data['name']
     email = data['email']
-    subject = data['subject']
     message = data['message']
     with open('database.csv', mode='a', newline='') as f2:
         writer = csv.writer(f2, delimiter=',', quotechar='"',
                             quoting=csv.QUOTE_MINIMAL)
-        writer.writerow([email, subject, message])
+        writer.writerow([name, email, message])
 
 
 @app.route("/")
@@ -43,16 +41,8 @@ def submit_form():
         try:
             data = request.form.to_dict()
             write_to_CSV(data)
-            return redirect('thankyou.html')
+            return redirect('index.html')
         except:
             return 'did not save to database'
     else:
         return 'Something went wrong, try again'
-
-
-# write to txt file
-
-# with open('database.txt', 'a') as f:
-#     for k, v in data.items():
-#         f.write(str((k, v)))
-#     f.close()
