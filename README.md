@@ -1,4 +1,4 @@
 # portofolio
 
-This is the repository for my personal wesbite. Server is based on Flaks. The HTML files are adapted from Mashup Templates.
+This is the repository for my personal wesbite. Server is based on Flask. The HTML / Bootstrap / Javascript files are adapted from UIdeck.
 I will be updating and modfying this website to show of my projects.
