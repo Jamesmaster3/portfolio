@@ -4,6 +4,7 @@ import csv
 
 # flask --app server.py --debug run
 
+# to do 1) fix logo banner 2) fix logo footer 3) fix spelling
 
 def create_app():
     app = Flask(__name__)
