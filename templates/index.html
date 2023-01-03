@@ -1,87 +1,514 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="description" name="description">
-  <meta name="google" content="notranslate" />
-  <meta content="Mashup templates have been developped by Orson.io team" name="author">
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no">
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/static/assets/apple-icon-180x180.png">
-  <link href="/static/assets/favicon.ico" rel="icon">
+    <!--====== Title ======-->
+    <title>Jim Bentem</title>
 
-  <title>Title page</title>
+    <!--====== Favicon Icon (empty icon) ======-->
+    <link rel="shortcut icon" href="static/assets/images/favi.png" type="image/png">
 
-  <link href="/static/main.3f6952e4.css" rel="stylesheet">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="static\assets\css\bootstrap.min.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="static/assets/css/LineIcons.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="static/assets/css/magnific-popup.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="static/assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="static/assets/css/style.css">
+
+
 </head>
 
-<body class="minimal">
-  <div id="site-border-left"></div>
-  <div id="site-border-right"></div>
-  <div id="site-border-top"></div>
-  <div id="site-border-bottom"></div>
-  <!-- Add your content of header -->
-  <header>
-    <nav class="navbar  navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
-          aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+<body>
 
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav ">
-            <li><a href="./index.html" title="">01 : Home</a></li>
-            <li><a href="./works.html" title="">02 : Python projecten</a></li>
-            <li><a href="./about.html" title="">03 : About me</a></li>
-            <li><a href="./contact.html" title="">04 : Contact</a></li>
-          </ul>
+    <!--====== PRELOADER PART START ======-->
 
-
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- Add your site or app content here -->
-  <div class="hero-full-container background-image-container white-text-container"
-    style="background-image: url('/static/assets/images/rotterdam.jpg')">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="hero-full-wrapper">
-            <div class="text-content">
-              <h1>Hallo,<br>
-                <span id="typed-strings">
-                  <span>Ik ben Jim Bentem</span>
-                  <span>Consultant voor de publieke sector</span>
-                  <span>Beginnend Python hobbyist</span>
-                </span>
-                <span id="typed"></span>
-              </h1>
+    <div class="preloader">
+        <div class="loader_34">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      type();
-      movingBackgroundImage();
-    });
-  </script>
+    <!--====== PRELOADER ENDS START ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header id="home" class="header-area">
+        <div class="navigation fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="static/assets/images/logo_jim.png" alt="Logo">
+                            </a> <!-- Logo -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active"><a class="page-scroll" href="#home">Home</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#service">Interesses</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#blog">Portfolio</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navigation -->
+
+        <div id="parallax" class="header-content d-flex align-items-center">
+            <div class="header-shape shape-one layer" data-depth="0.10">
+                <img src="static/assets/images/banner/shape/shape-1.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-tow layer" data-depth="0.30">
+                <img src="static/assets/images/banner/shape/shape-2.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-three layer" data-depth="0.40">
+                <img src="static/assets/images/banner/shape/shape-3.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-fore layer" data-depth="0.60">
+                <img src="static/assets/images/banner/shape/shape-2.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-five layer" data-depth="0.20">
+                <img src="static/assets/images/banner/shape/shape-1.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-six layer" data-depth="0.15">
+                <img src="static/assets/images/banner/shape/shape-4.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-seven layer" data-depth="0.50">
+                <img src="static/assets/images/banner/shape/shape-5.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-eight layer" data-depth="0.40">
+                <img src="static/assets/images/banner/shape/shape-3.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-nine layer" data-depth="0.20">
+                <img src="static/assets/images/banner/shape/shape-6.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-ten layer" data-depth="0.30">
+                <img src="static/assets/images/banner/shape/shape-3.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="header-content-right">
+                            <h4 class="sub-title">Hi, ik ben</h4>
+                            <h1 class="title">Jim Bentem</h1>
+                            <p>Consultant en Python enthousiasteling</p>
+                            <a class="main-btn" href="#blog">Bekijk mijn projecten</a>
+                        </div> <!-- header content right -->
+                    </div>
+                    <div class="col-lg-6 offset-xl-1">
+                        <div class="header-image d-none d-lg-block">
+                            <img src="static/assets/images/banner/jim_cut-out.png" alt="hero">
+                        </div> <!-- header image -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div class="header-social">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header-social-icon">
+                                <ul>
+                                    <li><a href="https://github.com/Jamesmaster3"><i class="lni-github-original"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/jim-bentem/"><i class="lni-linkedin-original"></i></a></li>
+                                </ul>
+                            </div> <!-- header social -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- header social -->
+        </div> <!-- header content -->
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="about-area pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="title">Over mij</h2>
+                        <p></p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-content mt-50">
+                        <h5 class="about-title">Hi! Ik ben Jim Bentem</h5>
+                        <p>Ik ben een ambitieuze en leergierige young professional met een achtergrond in Bestuurskunde en Filosofie. Gedreven om bij te dragen aan het oplossen van maatschappelijke problemen. Momenteel ben ik bij KPMG werkzaam als consultant voor de publieke sector. In mijn vrije tijd houd ik me bezig met programmeren, voornamelijk met Python. Op deze pagina kan je een aantal van mijn (toekomstige) web-apps en andere projecten bekijken.</p>
+                    </div> <!-- about content -->
+                </div>
+                <div class="col-xl-5 offset-xl-1 col-lg-6">
+                    <div class="about-skills pt-25">
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">Python</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">33</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="33"></div>
+                                </div>
+                            </div>
+                        </div> <!-- skill item -->
+                        <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">HTML/CSS</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">15</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="15"></div>
+                                </div>
+                            </div>
+                        </div> <!-- skill item uncomment to add more -->
+                        <!-- <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">Photoshop</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">50</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="50"></div>
+                                </div>
+                            </div>
+                        </div> skill item -->
+                        <!-- <div class="skill-item mt-25">
+                            <div class="skill-header">
+                                <h6 class="skill-title">Sketch</h6>
+                                <div class="skill-percentage">
+                                    <div class="count-box counted">
+                                        <span class="counter">90</span>
+                                    </div>
+                                    %
+                                </div>
+                            </div> -->
+                            <!-- <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="90"></div>
+                                </div> -->
+                            </div>
+                        </div> <!-- skill item -->
+                    </div> <!-- about skills -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+
+    <!--====== SERVICES PART START (nu interesses) ======-->
+
+    <section id="service" class="services-area gray-bg pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-30">
+                        <h2 class="title">Mijn interesses</h2>
+                        <p>Mijn interesse ligt vooral bij programmeren in Python op de drie onderstaande gebieden.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-reload"></i> <!-- Find the reference class at https://lineicons.com/icons/?category=text%20editor -->
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Automation / Scripting</a></h4>
+                            <p>Ik vind het fantastisch om processen te automiseren, waarmee ik mijzelf en anderen tijd bespaar en kansen op menselijke fouten verminder.</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni lni-bar-chart"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#contact">Data science</a></h4>
+                            <p>Voor mijn werk gebruik ik soms Python om data te analyseren.</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni-code-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Web apps</a></h4>
+                            <p>De applicaties die ik heb gemaakt probeer ik zo veel mogelijk te publiceren op mijn website.</p>
+                        </div>
+                    </div> <!-- single service -->
+
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== SERVICES PART ENDS ======-->
+
+    <!--====== CALL TO ACTION PART START ======-->
+    <!-- UNCOMMENT TO ADD CALL TO ACTION PART
+    <section id="call-to-action" class="call-to-action pt-125 pb-130 bg_cover" style="background-image: url(static/assets/images/call-to-action.jpg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-9">
+                    <div class="call-action-content text-center">
+                        <h2 class="action-title">Have any project on mind?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nostrud.</p>
+                        <ul>
+                            <li><a class="main-btn custom" href="#">download cv</a></li>
+                            <li><a class="main-btn custom-2" href="#">hire me</a></li>
+                        </ul>
+                    </div> !-- call action content --
+                </div>
+            </div> !-- row --
+        </div> !-- container --
+    </section> -->
+
+    <!--====== CALL TO ACTION PART ENDS ======-->
+
+    <!--====== BLOG PART START ======-->
+
+    <section id="blog" class="blog-area pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-25">
+                        <h2 class="title">Projecten</h2>
+                        <p>Hieronder staan mijn web-applicaties en een selectie van mijn projecten op Github. Zie mijn <a
+                            href="https://github.com/Jamesmaster3">github</a> pagina voor alle projecten.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8 col-sm-9">
+                    <div class="single-blog mt-30">
+                        <div class="blog-image">
+                            <img src="static/assets/images/blog/ztm.png" alt="Blog">
+                        </div>
+                        <div class="blog-content">
+                            <h4 class="blog-title"><a href="https://github.com/Jamesmaster3/ZTM_exercises">Zero to Mastery exercises</a></h4>
+                            <span>Github</span>
+                        </div>
+                    </div> <!-- single blog -->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-9">
+                    <div class="single-blog mt-30">
+                        <div class="blog-image">
+                            <img src="static/assets/images/blog/hackernews.png" alt="Blog">
+                        </div>
+                        <div class="blog-content">
+                            <h4 class="blog-title"><a href="https://github.com/Jamesmaster3/hackernews_scraper">Hackernews top posts scraper</a></h4>
+                            <span>Github</span>
+                        </div>
+                    </div> <!-- single blog -->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-9">
+                    <div class="single-blog mt-30">
+                        <div class="blog-image">
+                            <img src="static/assets/images/blog/outlook.png" alt="Blog">
+                        </div>
+                        <div class="blog-content">
+                            <h4 class="blog-title"><a href="https://github.com/Jamesmaster3/outlook_emails">Outlook email sending script</a></h4>
+                            <span>Github</span>
+                        </div>
+                    </div> <!-- single blog -->
+                </div>
+                <div class="col-lg-4 col-md-8 col-sm-9">
+                    <div class="single-blog mt-30">
+                        <div class="blog-image">
+                            <img src="static/assets/images/blog/flask.png" alt="Blog">
+                        </div>
+                        <div class="blog-content">
+                            <h4 class="blog-title"><a href="https://github.com/Jamesmaster3/portfolio">Portfolio website using Bootstrap and Flask</a></h4>
+                            <span>Github</span>
+                        </div>
+                    </div> <!-- single blog -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="blog-more text-center mt-50">
+                        <a class="main-btn" href="https://github.com/Jamesmaster3">Alle projecten</a>
+                    </div> <!-- blog more -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== BLOG PART ENDS ======-->
+
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact-area pt-125 pb-130 gray-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-25">
+                        <h2 class="title">Contact</h2>
+                        <p>Neem voor vragen of verzoeken contact met mij op via dit formulier.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-form pt-30">
+                        <form id="contact-form" action="submit_form" method="POST">
+                            <div class="single-form">
+                                <input type="text" name="name" placeholder="Naam" class="form-control" required>
+                            </div> <!-- single form -->
+                            <div class="single-form">
+                                <input type="email" name="email" placeholder="Email" class="form-control" required>
+                            </div> <!-- single form -->
+                            <div class="single-form">
+                                <textarea name="message" placeholder="Bericht" class="form-control" required></textarea>
+                            </div> <!-- single form -->
+                            <p class="form-message"></p>
+                            <div class="single-form">
+                                <button class="main-btn" type="submit">Verzenden</button>
+                            </div> <!-- single form -->
+                        </form>
+                    </div> <!-- contact form -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="footer-area">
+        <div class="footer-widget pt-130 pb-130">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="footer-content text-center">
+                            <a href="index.html">
+                                <img src="static/assets/images/logo_jim2.png" alt="Logo">
+                            </a>
+                            <ul>
+                                <li><a href="https://github.com/Jamesmaster3"><i class="lni-github-original"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/jim-bentem/"><i class="lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div> <!-- footer content -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+        <div class="footer-copyright pb-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text text-center pt-20">
+                            <p>Copyright © 2022. Template Crafted by <a href="https://uideck.com" rel="nofollow">UIdeck</a></p>
+                            <a href="https://www.flaticon.com/free-icons/application" title="application icons">Application icons created by alfanz - Flaticon</a>
+                        </div> <!-- copyright text -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
 
 
-  <script type="text/javascript" src="/static/main.70a66962.js"></script>
+
+
+
+
+
+    <!--====== jquery js ======-->
+    <script src="static/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="static/assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="static/assets/js/bootstrap.min.js"></script>
+    <script src="static/assets/js/popper.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="static/assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Parallax js ======-->
+    <script src="static/assets/js/parallax.min.js"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="static/assets/js/waypoints.min.js"></script>
+    <script src="static/assets/js/jquery.counterup.min.js"></script>
+
+
+    <!--====== Appear js ======-->
+    <script src="static/assets/js/jquery.appear.min.js"></script>
+
+    <!--====== Scrolling js ======-->
+    <script src="static/assets/js/scrolling-nav.js"></script>
+    <script src="static/assets/js/jquery.easing.min.js"></script>
+
+
+    <!--====== Main js ======-->
+    <script src="static/assets/js/main.js"></script>
+
 </body>
 
 </html>
