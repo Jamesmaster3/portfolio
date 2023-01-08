@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, redirect
 from flask_bootstrap import Bootstrap
 from scrape_hackernews import run_hackernews
 import csv
-import pprint
 
 # flask --app server.py --debug run
 
@@ -14,7 +13,6 @@ def create_app():
 
 
 app = create_app()
-
 
 
 def write_to_CSV(data):
@@ -49,6 +47,7 @@ def submit_form():
     else:
         return 'Something went wrong, try again'
 
+
 @app.route('/hackernews', methods=['POST', 'GET'])
 def request_hackernews():
     if request.method == 'POST':
@@ -57,7 +56,7 @@ def request_hackernews():
             pages = data['pages']
             top_posts = run_hackernews(int(pages))
             #return str(top_posts)
-            return render_template('hackernews_output.html', result=top_posts, pages=pages)
+            return render_template('hackernews_pages.html', result=top_posts, pages=pages)
         except:
             return 'Couldn\'t get latest posts'
     else:

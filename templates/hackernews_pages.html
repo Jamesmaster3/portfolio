@@ -115,6 +115,27 @@
             </div> <!-- row -->
             <div class="row">
                 <div class="col-lg-12">
+                    <table class = "table">
+                        <br>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Votes</th>
+                                <th>Link</th>
+                              </tr>
+                        </thead>
+                        {% for post in result %}
+                            <tr>
+                                <td>{{ post['title'] }}</td>
+                                <td>{{ post['votes'] }}</td>
+                                <td><a href="{{ post['link'] }}">{{ post['link'] }}</a></td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>  <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
                     <div class="header-social-icon">
                         <ul>
                             <br>
