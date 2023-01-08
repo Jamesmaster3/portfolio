@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 from flask_bootstrap import Bootstrap
 from scrape_hackernews import run_hackernews
 import csv
@@ -28,6 +28,10 @@ def write_to_CSV(data):
 @app.route("/")
 def my_home():
     return render_template('index.html')
+
+@app.route('/favicon.ico')
+def favicon():
+    return redirect(url_for('static', filename='favicon.ico'))
 
 
 @app.route("/<string:page_name>")
