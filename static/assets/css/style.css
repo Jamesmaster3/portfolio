@@ -688,6 +688,13 @@ p {
       @media (max-width: 767px) {
         .header-content .header-shape.shape-ten img {
           width: 100px; } }
+.header-content2 {
+  height: 10px;
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fbfbfb; }
 
 .header-content-right {
   position: relative; }

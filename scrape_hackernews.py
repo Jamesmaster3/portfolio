@@ -19,6 +19,8 @@ def create_custom_hn(links, subtext):
     for idx, item in enumerate(links):
         title = links[idx].getText()
         href = links[idx].get('href', None)
+        if href.startswith('item'):
+            href = f'https://news.ycombinator.com/{href}'
         vote = subtext[idx].select('.score')
         if len(vote):
             points = int(vote[0].getText().replace(' points', ''))
