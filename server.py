@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_bootstrap import Bootstrap
 from scrape_hackernews import run_hackernews
 import csv
-from time import sleep
 
 # flask --app server.py --debug run
 
@@ -20,7 +19,7 @@ def write_to_CSV(data):
     name = data['name']
     email = data['email']
     message = data['message']
-    with open('database.csv', mode='a', newline='') as f2:
+    with open('portofolio/database.csv', mode='a', newline='') as f2:
         writer = csv.writer(f2, delimiter=',', quotechar='"',
                             quoting=csv.QUOTE_MINIMAL)
         writer.writerow([name, email, message])
@@ -46,7 +45,6 @@ def submit_form():
         try:
             data = request.form.to_dict()
             write_to_CSV(data)
-            sleep(1)
             return redirect('index.html')
         except:
             return 'did not save to database'
