@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_bootstrap import Bootstrap
 from scrape_hackernews import run_hackernews
 import csv
+from time import sleep
 
 # flask --app server.py --debug run
 
@@ -45,6 +46,7 @@ def submit_form():
         try:
             data = request.form.to_dict()
             write_to_CSV(data)
+            sleep(1)
             return redirect('index.html')
         except:
             return 'did not save to database'
