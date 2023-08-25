@@ -19,7 +19,7 @@ def write_to_CSV(data):
     name = data['name']
     email = data['email']
     message = data['message']
-    with open('database.csv', mode='a', newline='') as f2:
+    with open('portofolio/database.csv', mode='a', newline='') as f2:
         writer = csv.writer(f2, delimiter=',', quotechar='"',
                             quoting=csv.QUOTE_MINIMAL)
         writer.writerow([name, email, message])
